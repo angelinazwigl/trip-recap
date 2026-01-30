@@ -1,0 +1,58 @@
+<!DOCTYPE html><!--Angelina Z, W2005555, 7/28/22-->
+<html lang="en">
+<head>
+<title>Zwigl 2022 Trip! :: Days 6-10</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="tripstyles.css">
+<style>
+main { display: flex;
+       flex-direction: row; /*video and form can be side-by-side*/ }
+#video, #survey { flex: 5; /*video and form each take 50% of page*/ }
+form { width: 90%; /*compresses form to be shorter and taller*/
+       font-size: 1.2em; 
+       line-height: 130%; /*more space between lines in survey*/ }
+label { display: block; /*each input goes to next line*/ }
+video { padding: 10px; 
+        margin: 30px 0px 0px 30px; }
+#survey { padding-left: 75px;
+          margin-top: 30px; }
+p { text-align: center;
+    font-size: 1.2em;
+    margin-left: 25px; /*pushes text closer to be centered with video*/ }
+</style>
+</head>
+<body>
+<div id="wrapper">
+<header>ZWIGL 2022 AUSTRIA/ITALY TRIP</header>
+<img src="imagebar.jpg" height="44" width="960" alt="mountain and sky in Mieders, Tyrol, Austria"><!--class configures "back home" css-->
+<a href="index.html"><span class="backhome">&laquo; back home</span></a>
+<main>
+<div id="video"><!--grouping together video and music credits to be in same column-->
+<video controls="controls" poster="video.jpg" width="400" height="500">
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.ogv" type="video/ogg">
+    <a href="video.mov">Austria day in the life vlog!</a> (.mov)
+</video>
+<p>music: Kyoto by Phoebe Bridgers</p>
+</div>
+<div id="survey"><!--grouping together heading and form to be in same column-->
+<h2>Take the Survey!</h2>
+<form method="get" action="mailto:survey@travel.net">
+    <label for="myage">age:</label>
+    <input type="text" name="myage" id="myage">
+    <label for="traveldestination">favorite travel destination:</label>
+    <input type="text" name="traveldestination" id="traveldestination">
+    <label for="bucketlist">top bucket list destination:</label>
+    <input type="text" name="bucketlist" id="bucketlist">
+    <label for="scale">how often you travel (1 being very rarely, 10 being frequently)</label>
+    <input type="number" name="scale" id="scale" min="1" max="10">
+    <label for="dates">your next planned vacation is on:</label>
+    <input type="date" name="dates" id="dates">
+    <input type="submit" id="mySubmit" value="Submit">
+</form>
+</div>
+</main>
+<footer>28 July 2022/Angelina Zwigl/CISW327 8wk Su22</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html><!--Angelina Z, W2005555, 7/28/22-->
+<html lang="en">
+<head>
+<title>Zwigl 2022 Trip! :: Days 1-5</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="tripstyles.css">
+<style>
+main { display: flex;
+       flex-direction: row; /*table and images can be side-by-side*/}
+table { margin: auto; /*content centered*/
+        border: 2px solid #000000;
+        width: 50%; /*compresses table to cover 50%*/
+        flex: 6; /*covers 60% of page*/
+        font-size: 1.2em; }
+th, td { border: 1px solid #000000;
+         padding: 5px; /*spacing between content and cell borders*/ }
+#cows { flex: 2; /*covers 20% of page*/
+        padding: 0px 20px; /*spacing between table and cows and cows and castle*/ }
+#castle { flex: 2; /*covers 20% of page*/}
+audio { width: 90%; /*player does not overflow into castle column*/
+        margin-top: 25px; /*pushes player closer to bottom*/}
+.blue { color: #799BC9; }
+.blue, p { line-height: 130%; /*more space between lines in captions*/}
+</style>
+</head>
+<body>
+<div id="wrapper">
+<header>ZWIGL 2022 AUSTRIA/ITALY TRIP</header>
+<img src="imagebar.jpg" height="44" width="960" alt="mountain and sky in Mieders, Tyrol, Austria">
+<a href="index.html"><span class="backhome">&laquo; back home</span></a><!--class configures "back home" css-->
+<main>
+<table title="Stats Days 1-5">
+    <tr>
+        <th scope="col">&nbsp;</th>
+        <th scope="col">activity</th>
+        <th scope="col">dinner</th>
+        <th scope="col">favorite part</th>
+    </tr>
+    <tr>
+        <th scope="row">day 1</th>
+        <td>Mieders Alpine Coaster</td>
+        <td>Knödel (German dumplings)</td>
+        <td>coaster down the mountain!</td>
+    </tr>
+    <tr>
+        <th scope="row">day 2</th>
+        <td>lunch with Dad's family</td>
+        <td>rice &amp; chicken</td>
+        <td>Schnitzel &amp; fries for lunch</td>
+    </tr>
+    <tr>
+        <th scope="row">day 3</th>
+        <td>visit Mom's family</td>
+        <td>pizza</td>
+        <td>dinner!</td>
+    </tr>
+    <tr>
+        <th scope="row">day 4</th>
+        <td>drive to Mirano, Italy</td>
+        <td>the best macoroni</td>
+        <td>seeing so many cows</td>
+    </tr>
+    <tr>
+        <th scope="row">day 5</th>
+        <td>Tyrol Castle &amp; city</td>
+        <td>pizza</td>
+        <td>walking around the city!</td>
+    </tr>
+</table>
+<div id="cows"><!--grouping together image, caption, audio to be in same column-->
+<img src="cows.jpg" height="200" width="200" alt="brown cows in field">
+<p>Day 4: Brown cows in Austria!</p><br>
+<span class="blue">listen to their cowbells!
+(actual audio from this image)</span><!--class changes color to blue-->
+<audio controls="controls">
+    <source src="cowbells.mp3" type="audio/mpeg">
+    <source src="cowbells.ogg" type="audio/ogg">
+</audio>
+</div>
+<div id="castle"><!--grouping together image and caption to be in same column-->
+<img src="castle.jpg" height="200" width="200" alt="Tyrol Castle window">
+<p>Day 5: View from inside Tyrol Castle in Mirano, Italy! Built before the year 1100.</p>
+</div>
+</main>
+<footer>28 July 2022/Angelina Zwigl/CISW327 8wk Su22</footer>
+</div>
+</body>
+</html>

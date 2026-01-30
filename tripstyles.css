@@ -1,0 +1,35 @@
+/*Angelina Z, W2005555, 7/28/22*/
+body { background-color: #F5F5DC;
+       font-family: "Lucida Console", Monaco5, monospace;
+       display: block; 
+       color: #000000; } 
+#wrapper {  margin-right: auto; 
+            margin-left: auto; /*centers content*/
+            max-width: 960px; 
+            border: 5px dashed hsla(0, 0%, 50%, 0.2) /*border is slightly opaque and dashed*/ }
+header { font-family: Georgia, serif;
+         font-size: 3em;
+         font-weight: bold; 
+         background-color: white;
+         text-align: center; 
+         padding: 0.5em 0;
+         height: 1em; }
+footer { text-align: center;
+         padding: 30px;
+         font-size: 1em;
+         color: #799BC9; }
+.backhome { font-family: Georgia, serif;
+            font-weight: bold; 
+            text-transform: uppercase; 
+            color: #000000; 
+            text-decoration: none; /*no underline*/
+            padding: 20px;
+            font-size: 1.2em; }
+.backhome:visited { color: #FFFFFF; }
+.backhome:hover { color: #799BC9; }
+#wrapper main { padding: 20px; }
+h2 { font-family: Georgia, serif;
+    font-weight: bold; 
+    font-size: 2.0em; 
+    text-align: center; 
+    margin-right: 75px; }
